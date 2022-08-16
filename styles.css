@@ -1,0 +1,375 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.Nav {
+    display: flex;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    text-decoration: none;
+    height: 80px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    box-shadow: 0 0 8px 1px #eee;
+}
+
+.navmenu {
+    margin-left: 150px;
+}
+
+.navmenubar {
+    display: flex;
+    margin-left: -200px;
+}
+
+.nav-items {
+    text-align: center;
+    position: relative;
+    padding-top: 11px;
+}
+
+.nav-items:hover>.services-1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-tangs {
+    color: rgb(0, 61, 77);
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-tangs:hover {
+    color: rgb(5, 125, 155);
+    transition: all 0.5s ease;
+}
+
+
+.nav-tangs::after {
+    position: absolute;
+    margin-top: 23px;
+    content: '';
+    background: rgb(5, 125, 155);
+    top: 100%;
+    opacity: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-tangs:hover::after,
+.active::after {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+}
+
+.nav-call {
+    margin-left: 50px;
+}
+
+.digit {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: -100px;
+}
+
+.quote {
+    margin-left: -200px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 800;
+    background: rgb(226, 193, 6);
+    align-items: center;
+    text-align: center;
+}
+
+.quote:hover {
+    background: rgb(176, 151, 5);
+}
+
+.services-1 {
+    width: 250px;
+    left: -10%;
+    top: 185%;
+    text-align: left;
+    position: absolute;
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.services-1:hover {
+    transform: translateY(-5px);
+
+}
+
+.s-t {
+    display: block;
+}
+
+.st {
+    display: block;
+    color: rgb(0, 61, 77);
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+}
+
+.st:hover {
+    color: rgb(5, 125, 155);
+}
+
+/*Section about*/
+.about-us {
+    display: flex;
+}
+
+.small {
+    margin: 20px 0;
+    margin-right: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.first-slider::before {
+    content: '';
+    display: table;
+
+}
+
+.gallery {
+    justify-content: center;
+    align-items: center;
+}
+
+.g {
+    width: 50%;
+    height: 700px;
+}
+
+.second-slider::before {
+    content: '';
+    display: table;
+}
+
+.slide {
+    opacity: 0.9;
+}
+
+.firstslider img {
+    width: 100%;
+}
+
+.second-slider img {
+    width: auto;
+}
+
+.slick-slide {
+    height: auto;
+}
+
+.slick-slider {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.first-slider,
+.second-slider {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    float: none;
+}
+
+.lt-btn {
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 14px 16px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 800;
+    background: rgb(226, 193, 6);
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.ut {
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(2, 10, 12);
+    justify-content: center;
+    text-align: center;
+}
+
+.lt {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 10%;
+    line-height: 1.5;
+    color: rgba(2, 10, 13, 1);
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.lt-btn:hover {
+    background: rgb(159, 135, 4);
+}
+
+.upper-text {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    padding: 12% 10%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-30%);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 20px;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+        'img-1 img-2 img-3'
+        'img-4 img-5 img-6'
+        'img-7 img-8 img-9';
+}
+
+.image-gallery a {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 10, 13, 0.2) 0 0 1px 2px;
+}
+
+.h2 {
+    position: relative;
+    opacity: 1;
+    color: rgb(0, 5, 5);
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    background-color: rgba(0, 10, 13, 0.2);
+}
+
+.h2:hover,
+.image-gallery a:hover::before {
+    opacity: 1;
+}
+
+.img-1 {
+    grid-area: img-1;
+    background-image: url("208007_eced4d8ea50d4a36b63c6875dcf6f1e4_mv2.webp");
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url("208007_497fd20dd2054969bcef43924693f7ac_mv2.webp");
+}
+
+.img-3 {
+    grid-area: img-3;
+    background-image: url("208007_0e0e576b3a2d406cb7de6fe11b9c8235_mv2\ \(1\).webp");
+}
+
+.img-4 {
+    grid-area: img-4;
+    background-image: url("208007_be1231a49fdd4899a6a580a0721c1639_mv2\ \(1\).webp");
+}
+
+.img-5 {
+    grid-area: img-5;
+    background-image: url("208007_0b5aaa46f04e4f508934716a1301b113_mv2.webp");
+}
+
+.img-6 {
+    grid-area: img-6;
+    background-image: url("208007_9020d86993a44ae3a8441ad5edf0982d_mv2.webp");
+}
+
+.img-7 {
+    grid-area: img-7;
+    background-image: url("208007_584a0e8460b24ce68eca82bfa534ccd9_mv2.webp");
+}
+
+.img-8 {
+    grid-area: img-8;
+    background-image: url("208007_65b01d3177f14a519bc369ab15eb262d_mv2_d_1347_1347_s_2.webp");
+}
+
+.img-9 {
+    grid-area: img-9;
+    background-image: url("208007_1f4bfc99e15041f1afaf3b767f5d0cc3_mv2_d_1935_1290_s_2\ \(1\).webp");
+}
+
+.div:hover {
+    background: rgb(95, 70, 5);
+}
+
+.footnavlist,
+.cls {
+    color: #fff
+}
+
+.footnavmenu {
+    display: flex;
+    word-wrap: break-word;
+    justify-content: space-between;
+}
+
+.secondfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footnavlist {
+    margin: 0 20px;
+    line-height: 2;
+}
+
+.footnavlist:hover {
+    color: rgb(5, 125, 155);
+    transition: 0.4s ease-out;
+}
